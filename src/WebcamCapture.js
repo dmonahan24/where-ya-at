@@ -21,7 +21,7 @@ function WebcamCapture() {
     <div className='webcamCapture'>
       <Webcam 
         audio={false}
-        height={400}
+        height={videoConstraints.height}
         ref={webcamRef}
         screenshotFormat='image/jpeg'
         width={videoConstraints.width}
