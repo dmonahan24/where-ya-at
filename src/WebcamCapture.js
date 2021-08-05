@@ -20,7 +20,7 @@ function WebcamCapture() {
     const imageSrc = webcamRef.current.getScreenshot();
     dispatch(setCameraImage(imageSrc));
     history.push('/preview');
-  }, [webcamRef])
+  }, [webcamRef, dispatch, history])
 
   return (
     <div className='webcamCapture'>
