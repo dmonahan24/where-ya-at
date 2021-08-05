@@ -22,7 +22,7 @@ function Preview() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-      if (cameraImage) {
+      if (!cameraImage) {
         history.replace('/');
       }
   }, [cameraImage, history]);
