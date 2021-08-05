@@ -5,8 +5,8 @@ import Preview from './Preview'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Chats from './Chats';
 import ChatView from './ChatView';
-import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/appSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import Login from './Login';
 import { auth } from "./firebase"
 
@@ -17,7 +17,8 @@ function App() {
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        dispatch(login({
+        dispatch(
+          login({
             username: authUser.displayName,
             profilePic: authUser.photoURL,
             id: authUser.uid,
