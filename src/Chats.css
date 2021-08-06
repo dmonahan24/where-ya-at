@@ -1,7 +1,7 @@
 .chats {
   position: relative;
   height: 400px;
-  width: 300px;
+  width: 250px;
 }
 
 .chats__takePicIcon {
@@ -69,5 +69,18 @@
   align-items: center;
   flex: 1;
   padding-left: 8px;
+}
 
+.chats__searchIcon {
+color: white;
+font-size: 13px !important;
+}
+
+.chats__chatIcon {
+  color: white;
+  font-size: 18px !important;
+}
+
+.Chat__info > p {
+  font-size: 8px;
 }

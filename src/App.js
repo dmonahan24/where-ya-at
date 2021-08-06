@@ -37,8 +37,11 @@ function App() {
        {!user ? (
          <Login />
        ) : (
+         <>
+         <img className="app__logo" src="https://lakeridgenewsonline.com/wp-content/uploads/2020/04/snapchat.jpg" alt="" />
         <div className='app__body'>
-        <Switch>
+          <div className="app__bodyBackground">
+          <Switch>
           <Route path='/chats/view'>
             <ChatView />
           </Route>
@@ -52,7 +55,10 @@ function App() {
           <WebcamCapture />
           </Route>
         </Switch>
+          </div>
+        
       </div>
+      </>
        )}
     </Router>
     </div>
